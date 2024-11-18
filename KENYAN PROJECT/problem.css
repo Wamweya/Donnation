@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ background-image: url(image/imgsav.jpeg);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+nav >a{
+  color: rgb(249, 76, 13);
+  margin-right: 50px;
+font-weight: bold;
+align-items: end;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 5px;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article {
+  background-color:white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+
+}
+
+.excerpt {
+  overflow: hidden;
+  line-height: 1.5em;
+  height: 4.5em;
+}
+
+.full-text {
+  display: none;
+}
+
+.toggle-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button {
+  font-family: Arial, sans-serif;
+  display: block;
+  padding: 20px 20px;
+  border: none;
+  background-color:skyblue;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin: 50px;
+  transition: all 0.3s ease;
+  margin-right: 700px;
+  border-radius: 10px;
+}
+
+.support button:hover{
+    background-color:orangered; ;
+    box-shadow: 10px 10px bla transparent;
+}
+.excerpt{
+color: black;
+}
+.full-text{
+  color: black;
+}

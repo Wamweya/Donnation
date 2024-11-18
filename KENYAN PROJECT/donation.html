@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="mpesa.css">
+</head>
+<header>
+    <h1>Donation Form</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.php">Contact Us</a>
+        <a href="problems.html">Info</a>
+        <a href="donationhistory.html">Donation History</a>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3 class="text-center">Donate to Our Cause</h3>
+            <form id="donationForm" action="process_donation.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="donationType">Donation Type</label>
+                    <select id="donationType" name="donationType" required>
+                        <option value="">Select Donation Type</option>
+                        <option value="food">Food</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="mpesa">M-Pesa</option>
+                    </select>
+                </div>
+                <div id="mpesaFields" class="form-group" style="display: none;">
+                    <label for="mpesaNumber">M-Pesa Number</label>
+                    <input type="tel" id="mpesaNumber" name="mpesaNumber" placeholder="Enter your M-Pesa number">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter amount">
+                </div>
+                <div id="foodFields" class="form-group" style="display: none;">
+                    <label for="food">Food Description</label>
+                    <input type="text" id="food" name="food" placeholder="Describe the food">
+                    <label for="foodLocation">Food Pickup Location</label>
+                    <input type="text" id="foodLocation" name="foodLocation" placeholder="Enter food pickup location">
+                </div>
+                <div id="clothesFields" class="form-group" style="display: none;">
+                    <label for="clothes">Clothes Description</label>
+                    <input type="text" id="clothes" name="clothes" placeholder="Describe the clothes">
+                    <label for="clothesLocation">Clothes Pickup Location</label>
+                    <input type="text" id="clothesLocation" name="clothesLocation" placeholder="Enter clothes pickup location">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn" name="submit">Donate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
